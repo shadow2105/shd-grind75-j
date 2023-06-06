@@ -1,10 +1,10 @@
-import array.BestTimeToBuySellStock;
+import string.ValidPalindrome;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("BestTimeToBuySellStock");
+        System.out.println("ValidPalindrome");
 
-        System.out.println(BestTimeToBuySellStock.solution(new int[]{7,1,5,3,6,4}));
-        System.out.println(BestTimeToBuySellStock.solutionLFPointer(new int[]{7,6,4,3,1}));
+        System.out.println(ValidPalindrome.solution("A man, a plan, a canal: Panama"));
+        System.out.println(ValidPalindrome.solutionLFPointer("race a car"));
     }
 }
