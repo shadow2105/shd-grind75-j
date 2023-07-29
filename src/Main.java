@@ -1,25 +1,15 @@
-import graph.FloodFill;
-
-import java.util.Arrays;
+import string.ValidAnagram;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("FloodFill");
+        System.out.println("ValidAnagram");
 
-        int[][] image = new int[][]{{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
+        System.out.println("\ns = \"anagram\", t = \"nagaram\"");
+        System.out.println(ValidAnagram.solutionArray("anagram", "nagaram"));
+        System.out.println(ValidAnagram.solutionMap("anagram", "nagaram"));
 
-        Arrays.stream(FloodFill.solutionBFS(image, 1, 1, 2))
-                .forEach((row) -> {
-                    System.out.println();
-                    Arrays.stream(row).forEach((e) -> System.out.print(e + " "));
-                });
-
-        System.out.println();
-
-        Arrays.stream(FloodFill.solutionDFS(image, 1, 1, 2))
-                .forEach((row) -> {
-                    System.out.println();
-                    Arrays.stream(row).forEach((e) -> System.out.print(e + " "));
-                });
+        System.out.println("\ns = \"rat\", t = \"car\"");
+        System.out.println(ValidAnagram.solutionArray("rat", "car"));
+        System.out.println(ValidAnagram.solutionMap("rat", "car"));
     }
 }
