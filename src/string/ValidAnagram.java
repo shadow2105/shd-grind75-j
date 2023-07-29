@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class ValidAnagram {
 
-    // Breadth First Search (Iteration) - Time Complexity: O(n) ; Space Complexity: O(k) ,
+    // Array - Time Complexity: O(n) ; Space Complexity: O(k) ,
     // Array random access is faster (that is when indices are known) than Hashmap,
     // Hashmap is implemented using an array of Linked List and also involves hashing operation overhead;
     // LeetCode - Runtime: 5 ms ; Memory : 41.9 MB
@@ -26,7 +26,7 @@ public class ValidAnagram {
         return true;
     }
 
-    // Depth First Search (Recursion) - Time Complexity: O(n) ; Space Complexity: O(k) ,
+    // Hashmap - Time Complexity: O(n) ; Space Complexity: O(k) ,
     // LeetCode - Runtime: 16 ms ; Memory : 43.8 MB
     public static boolean solutionMap(String s, String t) {
         if(s.length() != t.length()) { return false; }
